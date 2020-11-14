@@ -1,0 +1,54 @@
+        h1 {
+            margin-top: 50px;
+            text-align: center;
+            color: rgb(143, 139, 139);
+            font-size: 50px;
+/*             background-color: rgb(186, 186, 186); */
+            text-shadow: rgb(224, 224, 224) 1px 1px 0px;
+            background: #f2f2f2;
+            /* border-radius: 30px; */
+        }
+        #example_wrapper {
+            -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+            box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+            border-radius: 30px;
+            /* 弧度:寬度 */
+            padding: 20px;
+            /* 內距:寬度 */
+            margin-bottom: 30px;
+        }
+
+        input[type="text"] {
+            width: 50px;
+            text-align: center;
+            color: #000000;
+        }
+        button {
+            margin: 5px;
+        }
+        tr div {
+            display: inline-block;
+        }
+		color: #000;
+        tr .btn, .btn::before {
+            width: 200px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            color: #fff;
+            border-radius: 3px;
+        }
+        tr .btn {
+            position: relative;
+            background: #5ad;
+            color: #fff;
+            cursor: pointer;
+        }
+        .detailordar tr {
+            background: 'linear-gradient(#fff, #ECECEC, #fff)';
+        }
+        
+        .btn.disabled, .btn:disabled {
+		    opacity: .65;
+		    color: #000;
+		}

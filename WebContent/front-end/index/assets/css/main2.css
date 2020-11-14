@@ -1,0 +1,130 @@
+        #header.alt {
+            position: fixed;
+            top: 2.7em;
+        }
+
+        #header>a {
+            font-size: 110%;
+            font-weight: 900;
+        }
+
+        #header>a:last-child {
+            display: none;
+        }
+
+        #logo {
+            width: auto;
+            height: 60px;
+            padding: 12px 0;
+        }
+
+        #icons {
+            background: rgba(0, 0, 0, 0.5);
+            width: 25em;
+            height: 2.2em;
+            position: relative;
+            float: right;
+            top: 0.5em;
+            right: 0em;
+            z-index: 10000;
+            text-align: right;
+            align-items: middle;
+            border-radius: 1em 0 0 1em;
+        }
+
+        #icons::before {
+            /* 為了使inline-block的vertical-align有效用 */
+            content: "";
+            height: 100%;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        #icons>a, #icons a {
+            font-size: 110%;
+            color: white;
+            padding: 0 0.75em;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        #icons>a:last-child {
+            padding-right: 1.25em;
+        }
+
+        #search {
+            background-color: rgba(255, 255, 255, 0.85);
+            border: 0;
+            font-weight: 500;
+            width: 10em;
+            height: 1.5em;
+            margin: 0 0.75em;
+            padding: 0 0.75em;
+            display: inline-block;
+        }
+
+        #search::-webkit-input-placeholder {
+            color: rgb(130, 130, 130) !important;
+        }
+
+        @media screen and (max-width: 650px) {
+            #icons {
+                width: 100%;
+                min-width: 480px;
+                border-radius: 0;
+            }
+
+            #header>a {
+                display: none;
+            }
+
+            #header>a:last-child {
+                display: inline-block;
+                margin-right: 1em;
+                padding-right: 0;
+            }
+        }
+        .dropdown-menu {
+            z-index: 10000;
+            width: 10rem;
+            opacity: 0.95;
+        }
+        .dropdown-item {
+            color: #212529 !important;
+            font-weight: 900;
+        }
+        .inner .box {
+            height: 100%;
+        }
+
+        #searchBlock {
+            width: 45%;
+            height: auto;
+            margin-left: 10px;
+        }
+        #verticalwrite {
+            writing-mode: vertical-lr;
+            font-size: 1rem;
+        }
+        #verticalwrite:after {
+            content: none;
+        }
+        #newnotice {
+            font-weight: 300;
+            font-size: 11px;
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            padding: 1px;
+            opacity: 0.95;
+        }
+        .newmess {
+            border-bottom: 1px solid #d6d6d6;
+            padding: 1%;
+            color: #555;
+        }
+        .newmess:hover {
+            color: #000;
+            background-color: #f6f6f6;
+        }
+        #navIcon, .dropdown {
+            display: inline-block;
+        }

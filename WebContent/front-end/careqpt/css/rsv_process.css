@@ -1,0 +1,29 @@
+
+.rsv_process {
+	padding-top:    10px;
+	padding-bottom: 5px;
+	border-top:     1px solid #999999;
+	border-bottom:  1px solid #999999;
+    text-align:     center;
+}
+
+.rsv_process ul {
+    display: inline-block;
+    *display: inline;
+}
+
+.rsv_process li {
+	float: left;
+}
+#btn button {
+    width: 30%;
+}
+
+#return {
+	background-color: #DADADA;
+	color: rgb(121, 100, 100);
+}
+
+#return:hover {
+	background-color: rgb(198, 200, 200);
+}

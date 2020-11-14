@@ -1,0 +1,64 @@
+        .mapcontainer {
+            margin: 0 auto;
+            border: 2px solid #a6a6a6;
+            margin: 0 0 2.5rem 0;
+            padding: 1rem 0 1rem 0;
+            display: -moz-flex;
+            display: -webkit-flex;
+            display: -ms-flex;
+            display: flex;
+            -moz-flex-wrap: wrap;
+            -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -moz-align-items: stretch;
+            -webkit-align-items: stretch;
+            -ms-align-items: stretch;
+            align-items: stretch;
+
+        }
+        #map path {
+            /* fill: transparent; */
+            opacity: 0.7;
+            position: relative;
+            stroke: #FFF;
+            cursor: pointer;
+            -webkit-transition: fill .4s ease, stroke .4s ease, -webkit-transform .4s ease;
+            transition: fill .4s ease, stroke .4s ease, -webkit-transform .4s ease;
+            transition: fill .4s ease, stroke .4s ease, transform .4s ease;
+            transition: fill .4s ease, stroke .4s ease, transform .4s ease, -webkit-transform .4s ease
+        }
+        #map path:hover, #map path.active {
+            /* fill: rgba(255, 255, 255, 0.9); */
+            opacity: 0.9;
+            position: relative;
+            stroke: #FFF;
+            -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
+        }
+        #map {
+            background-color: #f2f2f2;
+            width: 45%;
+            border: 2px solid #a6a6a6;
+        }
+        #search {
+            width: 50%;
+            border: 2px solid #a6a6a6;
+        }
+        #map svg {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+        }
+        @media screen and (max-width: 900px) {
+            #map {
+                width: 100%;
+                border: 2px solid;
+                margin: 1rem;
+            }
+            #search {
+                width: 100%;
+                border: 2px solid;
+                margin: 1rem;
+            }
+        }

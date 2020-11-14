@@ -1,0 +1,95 @@
+        @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
+        @import url("../../../../utility/fontawesome-5.15.1/css/all.min.css");
+
+        * {
+            /* border: 1px solid red; */
+        }
+
+        body {
+            font-family: "Noto Sans TC", "Microsoft JhengHei";
+        }
+
+        nav {
+            height: 60px;
+        }
+
+        #header {
+            width: 100%;
+            height: 60px;
+        }
+
+        #logo {
+            width: auto;
+            height: 60px;
+            padding: 12px 0;
+        }
+
+        #navIcon {
+            /* height: 100%; */
+            margin-right: 40px;
+        }
+        #navIcon a:hover {
+            color: #fff;
+        }
+        #navIcon i {
+            /* font-size: ; */
+        }
+        #navIcon .dropdown {
+            /* height: 100%; */
+        }
+        #navIcon .dropdown-menu {
+            margin-right: -54px;
+        }
+        #navIcon .dropdown-item:hover {
+            color: inherit;
+        }
+
+        .text-header {
+            color: rgb(190, 190, 190);
+            font-size: 18px;
+        }
+
+        .navbar-dark .navbar-nav .nav-link {
+            color: rgb(190, 190, 190);
+        }
+        .navbar-dark .navbar-nav .nav-link:hover {
+            color: #fff;
+        }
+
+        .navbar-nav li.nav-item {
+            height: 60px;
+            cursor: pointer;
+        }
+        .navbar-nav li.active {
+            background-color: #222529;
+        }
+        #newnotice {
+            font-weight: 300;
+            font-size: 11px;
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            padding: 1px;
+            opacity: 0.95;
+        }
+        .newmess {
+            border-bottom: 1px solid #d6d6d6;
+            padding: 1%;
+            color: #555;
+        }
+        .newmess:hover {
+            color: #000;
+            background-color: #f6f6f6;
+        }
+
+        @media (max-width: 991px) {
+            #navbarNav {
+                order: 1;
+            }
+
+            #navIcon {
+                order: 0;
+            }
+
+            #hamburger {
+                order: 0;
+            }
+        }

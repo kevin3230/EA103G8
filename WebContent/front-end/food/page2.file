@@ -1,0 +1,37 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
+<div class="d-flex justify-content-between">
+
+<nav aria-label="Page navigation example" style="height:40px;">
+  <ul class="pagination justify-content-start">
+  <%if (rowsPerPage<rowNumber) {%>
+    <%if(pageIndex>=rowsPerPage){%>
+        <li class="page-item"><a class="page-link text-secondary" href="<%=request.getRequestURI()%>?whichPage=1&ft_no=<%=ft_no%>">第一頁</a></li>
+        <li class="page-item"><a class="page-link text-secondary" href="<%=request.getRequestURI()%>?whichPage=<%=whichPage-1%>&ft_no=<%=ft_no%>">上一頁 </a></li>
+    <%}%>
+  
+    <%if(pageIndex<pageIndexArray[pageNumber-1]){%>
+        <li class="page-item"><a class="page-link text-secondary" href="<%=request.getRequestURI()%>?whichPage=<%=whichPage+1%>&ft_no=<%=ft_no%>">下一頁 </a></li>
+        <li class="page-item"><a class="page-link text-secondary" href="<%=request.getRequestURI()%>?whichPage=<%=pageNumber%>&ft_no=<%=ft_no%>">最後一頁</a></li>
+    <%}%>
+  <%}%>
+  </ul>
+</nav>  
+
+  <%if (pageNumber>1) {%>
+    <FORM METHOD="post" ACTION="<%=request.getRequestURI()%>"> 
+    <div class="input-group">  
+       <select  class="custom-select" size="1" name="whichPage">
+       	<%for (int i=1; i<=pageNumber; i++){%>
+            <option value="<%=i%>">至第<%=i%>頁</option>
+         <%}%> 
+       </select>
+       <div class="input-group-append">
+       <input type="hidden" name="ft_no" value="<%=ft_no%>">
+       <input type="submit" class="btn btn-outline-secondary" value="確定" >
+       </div>
+    </div>  
+    </FORM>
+  <%}%>
+ 
+ </div>

@@ -1,0 +1,247 @@
+*, ul {
+	/* border: 1px solid red; */
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Noto Sans TC", "Microsoft JhengHei";
+	background-color: #F2F2F2;
+}
+
+li {
+	list-style-type: none;
+}
+
+img {
+	width: 100%;
+}
+
+.container {
+	font-size: 0px;
+	/* 取消RWD */
+	min-width: 960px !important;
+	max-width: 960px !important;
+}
+
+.fs12 {
+	font-size: 12px;
+}
+.fs14 {
+	font-size: 14px;
+}
+.fs15 {
+	font-size: 15px;
+}
+.fs16 {
+	font-size: 16px;
+}
+.fs20 {
+	font-size: 20px;
+}
+
+#mainTitle {
+	background-color: rgb(30, 30, 30);
+	color: #F8F9FA;
+	border-radius: 4px 4px 0px 0px;
+}
+
+#intro {
+	height: 500px;
+}
+
+.title {
+	background-color: rgb(30, 30, 30);
+	color: #F8F9FA;
+	font-size: 18px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	margin-top: 15px;
+	margin-bottom: 8px;
+	border-radius: 4px;
+}
+
+#monthPicker {
+	height: 46px;
+	background-color: #7D7D7D;
+	font-size: 15px;
+	border-radius: 4px;
+	padding: 6px 0px 0px 0px;
+	margin-bottom: 6px;
+}
+#monthPicker li {
+	width: 22%;
+	height: 40px;
+	background-color: #7D7D7D;
+	color: #FFF;
+	line-height: 30px;
+	padding: 5px 0px;
+	border-radius: 5px 5px 0px 0px;
+	display: inline-block;
+	text-align: center;
+	cursor: pointer;
+	user-select: none;
+}
+#monthPicker li:hover, #monthPicker .active {
+	background-color: #FFF;
+	color: black;
+}
+#monthPicker strong {
+	font-size: 28px;
+}
+
+#calendar {
+	width: 100%;
+	font-size: 16px;
+	border-collapse: separate;
+	border-spacing: 1px;
+}
+#calendar .sunday {
+	background-color: #FAE8EB;
+}
+#calendar .workDay {
+	background-color: #DADADA;
+}
+#calendar .saturday {
+	background-color: #E1ECF4;
+}
+#calendar .void {
+	background-color: #F0F0F0;
+}
+#calendar th {
+	height: 30px;
+	border: 2px solid #FFF;
+}
+#calendar td {
+	width: 14.286%;
+	height: 123px;
+	font-weight: bold;
+	border: 2px solid #FFF;
+	padding-top: 12px;
+	vertical-align: top;
+	user-select: none;
+}
+#calendar td div:nth-child(3) {		/* 金額取消加粗 */
+	font-weight: normal;
+}
+#calendar .full {
+	color: red;
+}
+#calendar .vacancy {
+	color: green;
+}
+#calendar .few {
+	color: rgb(255, 127, 39);
+}
+#calendar .del {
+	font-size: 14px;
+	text-decoration: line-through;
+}
+#calendar .discount {
+	font-style: italic;
+	color: red;
+	font-weight: bold;
+}
+#calendar .avail {
+	cursor: pointer;
+	user-select: none;
+}
+#calendar .avail:hover, #calendar .active {
+	border: 2px solid black;
+}
+
+#info {
+	width: 100%;
+}
+#info tr, #info th, #info td {
+	height: 21px;
+	border-right: 3px solid #FFF;
+	border-bottom: 3px solid #FFF;
+	padding: 7px 0px 7px 11px;
+	box-sizing: content-box;
+}
+#info th {
+	width: 20%;
+	background-color: #DCDCDC;
+	font-size: 15px;
+}
+#info td {
+	width: 80%;
+	background-color: #F0F0F0;
+	font-size: 14px;
+}
+
+#estimation {
+	width: 100%;
+	font-size: 12px;
+}
+#estimation tr, #estimation th, #estimation td {
+	border-right: 3px solid #FFF;
+	border-bottom: 3px solid #FFF;
+	box-sizing: content-box;
+}
+#estimation thead {
+	height: 18px;
+}
+#estimation td:nth-child(1) {
+	width: 17%;
+}
+#estimation td:nth-child(2) {
+	width: 15%;
+}
+#estimation td:nth-child(3) {
+	width: 36%;
+}
+#estimation td:nth-child(4) {
+	width: 10%;
+}
+#estimation td:nth-child(5) {
+	width: 10%;
+}
+#estimation td:nth-child(6) {
+	width: 12%;
+}
+#estBody tr {
+	background-color: #F2F2F2;
+	height: 32px;
+}
+#estBody tr th:nth-child(2) {
+	background-color: #EAEAEA;
+	padding-left: 16px;
+}
+#estBody .checkout {
+	height: 44px;
+	background-color: #DCDCDC;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: right;
+	padding-right: 16px;
+}
+#estBody .subtotal, #sum {
+	color: #DC3545;
+	margin-left: 16px;
+}
+
+#btn {
+	/*font-family: "Kosugi Maru", sans-serif;*/
+	font-family: Noto Sans TC, Microsoft JhengHei;
+	font-weight: bold;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+#btn button {
+	width: 30%;
+}
+#return {
+	background-color: #DADADA;
+	color: rgb(121, 100, 100);
+}
+#return:hover {
+	background-color: rgb(198, 200, 200);
+}
+
+#top > li {
+	font-size: 14px;
+	color: #DC3545;
+	list-style-type: disc;
+}

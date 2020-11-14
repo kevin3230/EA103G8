@@ -1,0 +1,180 @@
+﻿@charset "utf-8";
+
+#image_view,
+#option_view,
+#choice_view {
+    position: absolute;
+    top:      100px;
+    left:     100px;
+	width:    680px;
+	border:   6px solid #E6E6E6;
+	margin:   0px;
+	padding:  15px;
+	background: #FFF url(null);
+	text-align: left;
+}
+
+#image_view *,
+#option_view *,
+#choice_view *{
+    margin:  0;
+    padding: 0;
+}
+
+#image_view .header {
+	background: url(../img/price/pop/title_bg.gif) no-repeat left top;
+	width:   670px;
+	height:  40px;
+	padding: 0px 10px;
+	font-size:   16px;
+	line-height: 2;
+	text-align:  left;
+}
+
+#image_view .contents {
+    width: 100%;
+    margin-top:   2px;
+}
+
+#image_view .image_holder {
+    width:      600px;
+    height:      400px;
+    text-align: center;
+    vertical-align: middle;
+}
+#image_view .image_holder div img {
+}
+
+#image_view .thumbnail_holder {
+    width: 60px;
+}
+
+#image_view .prev_button {
+}
+#image_view .next_button {
+}
+
+#image_view .thumbnail_container {
+    width:  55px;
+    height: 289px;
+    /*border:       1px solid red;*/
+    overflow: hidden;
+    margin: 5px auto;
+}
+
+#image_view .thumbnail_list span {
+    display: inline-block;
+    background: #000;
+    cursor: pointer;
+}
+
+#image_view .close_button {
+    position: absolute;
+    top:      -18px;
+    right:    -18px;
+}
+#option_view .close_button,
+#choice_view .close_button {
+    position: absolute;
+    bottom:   -18px;
+    right:    -18px;
+}
+
+
+#option_view,
+#choice_view {
+	width:      600px;
+    text-align: left;
+}
+
+#option_view .divTitle,
+#choice_view .divTitle 
+{
+	border-bottom: 1px solid #CCCCCC;
+    height: 40px;
+    margin-top: 10px;
+}
+
+#option_view .title,
+#choice_view .title 
+{
+	width:350px;
+	height:20px;
+	padding-left:  43px;
+	font-size:16px;
+	font-weight:   bold;
+	float:left;
+}
+
+#option_view .unit 
+{
+	width:200px;
+	height:20px;
+	margin-left:400px;
+	font-size:16px;
+	color:Red;
+	text-align:right;
+}
+
+#choice_view .difference {
+	width:200px;
+	height:20px;
+	float:right;
+    text-align:right;
+	font-size:16px;
+}
+
+#choice_view .difference_value {
+	color:Red;
+}
+ 
+#choice_view .caption_difference_eng
+{
+	width:70px;
+	height:20px;
+	float:right;
+	font-size:16px;
+	text-align:right;
+}
+
+#choice_view .choicekobetu
+{
+    clear: both;
+    float: none;
+    text-align: right;
+    width: 600px;
+}
+
+#option_view .contents,
+#choice_view .contents {
+	margin-top:   10px;
+    padding-left: 43px;
+}
+
+#option_view .notice {
+	margin-top:   10px;
+    padding-left: 43px;
+}
+
+#option_view .image,
+#choice_view .image {
+	width:   600px;
+	height:  400px;
+    display:        table-cell;
+	text-align:     center;
+    vertical-align: middle;
+}
+
+#option_view .image img,
+#choice_view .image img {
+    vertical-align: middle;
+}
+
+#option_view .image .dummy,
+#choice_view .image .dummy {
+    display: inline;
+    zoom: 1;
+    width: 0px;
+    height: 100%;
+    vertical-align: middle;
+}

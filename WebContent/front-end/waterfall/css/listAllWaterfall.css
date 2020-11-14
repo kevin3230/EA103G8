@@ -1,0 +1,64 @@
+body {
+	background-color:white;
+	text-align: center;
+	margin: 20px auto;
+}
+
+#all {
+	width:80%;
+	text-align: center;
+	margin: 20px auto;
+}
+#drop{
+	background-color: transparent;
+	 position: absolute;
+	 top:5px;
+	 right:15px;
+	 z-index: 1;
+}
+#drop:hover{
+	background-color:white;
+}
+.back-to-top{
+
+	position: fixed;
+	top: 83%;
+	left: 3%;
+	opacity: 0.5;
+	z-index: 5;
+}
+.back-to-top i{
+	font-size: 50px;
+}
+.card-body{
+	text-align: left;
+}
+#time{
+	width:400px;
+	height:50px;
+	border:2px;
+	
+}
+h4{
+	font-color:darkgray;
+}
+.share-border{
+	border-top: 1px solid #a9a9a9;
+	margin: 10px;
+}
+
+#search {
+        width: 14px;
+	margin: 5px 10px;
+	left: 25%;
+}
+#input {
+        border-color: #d4d4d4;
+        border-width: 1px;
+        border-style: solid;
+        padding: 5px;
+        width: 550px;
+        height: 30px;
+        border-radius: 30px;
+        margin:0 auto;
+}

@@ -1,0 +1,55 @@
+@import url("font-awesome.min.css");
+footer {
+	padding-top: 2rem;
+	padding-bottom: 1rem;
+}
+
+footer ul {
+	padding-inline-start: 0;
+	margin-bottom: 2rem;
+}
+
+footer ul li {
+	list-style-type: none;
+}
+
+footer ul li a:hover {
+	color: #fff;
+}
+
+.footer-icon {
+	text-decoration: none;
+	border-bottom: none;
+	position: relative;
+	color: rgb(190, 190, 190);
+	font-size: 1.8rem;
+}
+
+.footer-icon:before {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	text-transform: none !important;
+}
+
+.footer-icon:hover {
+	text-decoration: none;
+}
+
+.text-footer {
+	color: rgb(190, 190, 190);
+}
+
+.fs-082 {
+	font-size: 0.82rem;
+}
+
+.fs-092 {
+	font-size: 0.92rem;
+}
+
+#copyright {
+	margin-bottom: 1rem;
+}

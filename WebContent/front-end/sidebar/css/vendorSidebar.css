@@ -1,0 +1,33 @@
+        .card-body-color {
+            background-color: rgba(180, 180, 180, 0.2);
+        }
+        
+        .card-header-btn, .aButton {
+            background-color: rgba(180, 180, 180, 0.4);
+            border-radius: 0;
+            border-bottom: 0;
+        }
+        
+        .aButton .btn-link, .card-header-btn .btn-link  {
+            color: #444;
+            font-size: 1.1rem;
+        }
+        
+        .card-header-btn:hover, .aButton:hover {
+            background-color: rgba(180, 180, 180, 0.9);
+        }        
+        
+        .aButton .btn-link:hover, .card-header-btn .btn-link:hover {
+            color:#444;
+            text-decoration:none;
+        }
+        
+        .aButton2-active {
+            color: #fff;
+            background-color: #343a40;
+            border-color: #343a40;
+        }
+        
+        .card-header-active {
+        	 background-color: rgba(180, 180, 180, 0.9);
+        }

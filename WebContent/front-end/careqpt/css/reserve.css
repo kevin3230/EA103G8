@@ -1,0 +1,1303 @@
+﻿@charset "utf-8";
+/* @import "./0-import.css"; */
+@import "./rsv_process.css";
+
+.content {
+    width: 800px;
+    margin-top: 20px;
+    margin-left:  auto;
+    margin-right: auto;
+}
+
+span.required_mark {
+    display: inline-block;
+    width:  14px;
+    height: 14px;
+    background-image:    url("../common/img/required_mark.gif");
+    background-repeat:   no-repeat;
+    background-position: center center;
+}
+
+.price {
+	font-family: Arial;
+	font-weight: bold;
+	color: #D40000;
+}
+
+.red {
+    color: #C80000;
+}
+
+.validation {
+    font-size:   14px;
+    color:       #C80000;
+    font-weight: bold;
+}
+
+table.style01 {
+    border-collapse: collapse;
+}
+table.style01 th {
+    background-color: #DCDCDC;
+    border-right:     3px solid #FFFFFF;
+    border-bottom:    3px solid #FFFFFF;
+    padding: 7px 10px 7px 25px;
+}
+table.style01 td {
+    background-color: #F0F0F0;
+    border-right:     3px solid #FFFFFF;
+    border-bottom:    3px solid #FFFFFF;
+    padding: 7px 10px 7px 10px;
+}
+table.style01 th.end,
+table.style01 td.end {
+    border-right: none;
+}
+table.style01 tr.end th,
+table.style01 tr.end td {
+    border-bottom: none;
+}
+
+/**********************************************************************************************************************/
+/*  予約内容入力画面 */
+
+span.required_mark {
+    height: auto;
+    background-position: left center;
+}
+
+/* プラン情報 ------------------------------------------------------------------------------------*/
+
+.planinfo {
+}
+
+/* 上部文言 */
+.planinfo p {
+    margin:    10px;
+    font-size: 13px;
+}
+.planinfo p span.required_mark {
+    width:  25px;
+}
+
+/* テーブル */
+.planinfo table {
+    width:     100%;
+    font-size: 14px;
+}
+.planinfo table th {
+    width: 150px;
+}
+.planinfo table td {
+    padding: 0px;
+}
+.planinfo table th,
+.planinfo table td div {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding: 7px 0px 7px 11px;
+}
+
+.planinfo div.invalid {
+    border: 3px solid #BF726A;
+    padding: 4px 0px 4px 8px;
+}
+
+/* 人数入力 --------------------------------------------------------------------------------------*/
+
+.people {
+}
+
+/* ご利用人数ヘッダ */
+.people h3 {
+    margin-bottom: 5px;
+}
+
+/* 検証メッセージ */
+.people p.validation {
+    margin-bottom: 10px;
+}
+
+/* 人数入力フォームテーブル */
+.people table {
+    width: 100%;
+    line-height: 2em;
+}
+.people table td.inner {
+    padding: 0;
+}
+.people table td.inner table {
+    margin-bottom: -3px;
+}
+.people table th.col_stay {
+    width: 100px;
+    font-size: 14px;
+}
+.people table td.col_room {
+    width: 85px;
+}
+.people table th.col_people {
+    width: 65px;
+    font-size: 14px;
+    font-weight: normal;
+}
+.people table span.title,
+.people table span.value,
+.people table span.title_eng,
+.people table span.value_eng {
+    display: inline-block;
+}
+.people table tr.adult span.title {
+    padding-right:5px;
+}
+.people table tr.adult span.value {
+    width: 70px;
+}
+.people table tr.child span.title {
+    width: 60px;
+}
+.people table tr.child span.value {
+    width: 70px;
+}
+.people table tr.baby span.title {
+    width: 90px;
+    vertical-align:middle;
+}
+.people table tr.baby span.value {
+    width: 70px;
+}
+
+/*----- 英語用 -----*/
+.people table tr.adult span.title_eng {
+    padding-right:5px;
+}
+.people table tr.adult span.value_eng {
+    width: 65px;
+}
+.people table tr.baby span.title_eng {
+    width: 150px;
+    vertical-align:middle;
+}
+.people table tr.baby span.value_eng {
+    width: 70px;
+}
+
+.people div.invalid {
+    border: 3px solid #BF726A;
+    overflow: hidden;
+    *border: none;
+}
+html*.people table.invalid {
+    border: 3px solid #BF726A;
+    border-bottom-width: 6px;
+}
+.people table.invalid th.col_people {
+    width: 62px;
+}
+.people table select {
+    *vertical-align: -3px;
+}
+
+/* 固定料金フォームテーブル */
+.people .fix_charge_table th {
+    width: 150px;
+    font-size: 14px;
+}
+.people .fix_charge_table .title {
+    width: 60px;
+}
+.people .fix_charge_table .title_eng {
+    width: 100px;
+}
+.people .fix_charge_table td em {
+    font-size: 16px;
+    font-style: normal;
+}
+.people .fix_charge_table input {
+    vertical-align: -1px;
+}
+.people .fix_charge_table select {
+    *vertical-align: -3px;
+}
+.people .people_select td {
+    padding: 0;
+}
+.people .validate_frame_on {
+    border: 3px solid #BF726A;
+    padding: 4px 0px 4px 8px
+}
+.people .validate_frame_off {
+    padding: 7px 0px 7px 11px
+}
+
+/* 人数入力用の必須マーク拡張 */
+.people span.required_mark {
+    width:  20px;
+    background-position: right center;
+}
+
+/* 2泊目以降ボタンの入れ物 */
+.people div.button_holder {
+    margin-top: 5px;
+}
+
+/* チョイス --------------------------------------------------------------------------------------*/
+
+.choice {
+}
+
+.choice h3 {
+    margin-bottom: 5px;
+}
+
+.choice table {
+    width: 100%;
+}
+.choice table th {
+    background-color: #DCDCDC;
+    padding: 7px 0px 7px 20px;
+}
+.choice table td {
+    background-color: #F0F0F0;
+    padding: 7px 0px 7px 11px;
+}
+.choice table td.inner {
+    padding: 0;
+}
+.choice table.inner {
+    margin-bottom: -3px;
+}
+
+.choice table th.col_stay {
+    width: 100px;
+    border-right: 3px solid #FFFFFF;
+    border-bottom: 3px solid #FFFFFF;
+}
+.choice table td.col_choice {
+    border-bottom: 3px solid #FFFFFF;
+}
+.choice table th.title {
+    border-bottom: 3px solid #FFFFFF;
+}
+
+.choice span.required_mark {
+    width:  20px;
+    background-position: right center;
+}
+
+/* 各チョイス */
+.choice .choice_selector {
+}
+.choice .choice_selector th {
+    width: 164px;
+    background-color: #F0F0F0;
+    border-right:  3px solid #FFFFFF;
+    border-bottom: 3px solid #FFFFFF;
+}
+.choice .choice_selector td {
+    border-bottom: 3px solid #FFFFFF;
+}
+.choice .choice_selector input {
+    vertical-align: -3px;
+    *vertical-align: -1px;
+}
+
+table.style01 th {
+    background-color: #DCDCDC;
+    border-right:     3px solid #FFFFFF;
+    border-bottom:    3px solid #FFFFFF;
+}
+table.style01 td {
+    background-color: #F0F0F0;
+    border-right:     3px solid #FFFFFF;
+    border-bottom:    3px solid #FFFFFF;
+}
+/* オプション数入力 ------------------------------------------------------------------------------*/
+
+.option {
+}
+
+.option h3 {
+    margin: 5px 0px;
+}
+
+.option table {
+    width: 100%;
+}
+.option table tr.row_header th {
+    background-color: transparent;
+    padding: 0;
+    text-align: center;
+}
+.option table tr.row_header th.col_name {
+    width: 235px;
+}
+.option table tr.row_detail th.col_name {
+    text-align: left;
+}
+
+.option table tr.row_header th.col_price {
+    width: 80px;
+}
+.option table tr.row_header th.col_price2 {
+    width: 110px;
+}
+.option table tr.row_header th.col_stay {
+    width: 55px;
+}
+.option table tr.row_detail td.col_price {
+    padding-left:  0px;
+    padding-right: 10px;
+    text-align: right;
+    font-size:  14px;
+}
+.option table tr.row_detail td.col_value {
+    text-align: center;
+    padding:0;
+}
+
+/* 特記事項、予約金、キャンセル規定のブロック------------------------------------------------------- */
+
+div.clsReserveFeeNote {
+	padding-left: 18px;
+	margin: 2px 0 20px 0;
+	line-height: 1.2em;
+	font-size: 12px;
+}
+
+/* 予約金 */
+
+div.clsReserveFee {
+	padding-left: 18px;
+	margin: 2px 0 20px 0;
+	line-height: 2em;
+	background: #DCDCDC;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+/* キャンセル規定 */
+table#CancelFee {
+    width: 100%;
+    font-size: 12px;
+}
+
+/* 送信 */
+
+.submit {
+    margin-bottom: 30px;
+}
+
+.submit p {
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 13px;
+}
+
+#main {
+	padding: 20px 0 0;
+	margin: 0 auto;
+	width: 800px;
+}
+
+#main .outBox {
+	margin: 0 auto;
+	width: 800px;
+}
+
+#main .p01 {
+	margin: 10px 0 15px 10px;
+	font-size: 13px;
+}
+
+#main h3 {
+	margin-bottom: 5px;
+	clear: both;
+}
+
+#main .none {
+	border-bottom: none;
+}
+
+#main .ul01 {
+	margin: 0 0 30px 155px;
+}
+
+#main .ul01 li {
+	margin-right: 12px;
+	float: left;
+}
+
+#main .p02 {
+	margin: 0 0 14px 155px;
+}
+
+#main .t_box {
+	margin: 0 0 20px;
+	padding: 10px;
+	border: 1px solid #C8C8C8;
+}
+
+#main .t_box table {
+	width: 100%;
+}
+
+#main .t_box table th.b0 {
+	border: 0;	
+}
+
+#main .t_box table th {
+	padding: 0 0 0 0;
+	width: 182px;
+	text-align: left;
+	color: #fff;
+	font-weight: normal;
+	font-size: 16px;
+	border-bottom: 3px solid #fff;
+	border-right: 10px solid #fff;
+	background: url(../img/reserve/estimate_th_back.gif) no-repeat left bottom;
+}
+
+#main .t_box table th span {
+	margin: 0 0 10px 17px;
+}
+
+#main .t_box table th span {
+	padding-right: 20px;
+	font-weight: bold;
+	display: inline-block;
+	margin: 0 0 10px 13px;
+	background: url(../common/img/att_icon02.gif) no-repeat right center;
+}
+
+* html #main .t_box table th span {
+	background: url(../common/img/att_icon02.gif) no-repeat right 4px;
+}
+
+*+ html #main .t_box table th span {
+	background: url(../common/img/att_icon02.gif) no-repeat right 4px;
+}
+
+
+#main .t_box table th span.backno {
+	background: none;
+}
+
+#main .t_box table th img {
+	float: left;
+	display: block;
+}
+
+#main .t_box table td {
+	padding: 5px 13px 13px;
+	text-align: left;
+	background: url(../img/reserve/td_dotted_line.gif) repeat-x left bottom;
+}
+
+#main .t_box table.innerTable {
+	width: 325px;
+	border: none;
+}
+
+#main .t_box table.innerTable td {
+	padding: 0;
+	background:  none;
+}
+
+#main .t_box table.innerTable tr.hei08 {
+	height: 8px;
+	*height: 5px;
+}
+
+#main .t_box table.innerTable td.right {
+	text-align: right;
+	vertical-align: middle;
+}
+
+#main .t_box table.innerTable td.tdinput {
+	width: 135px;
+}
+
+#main .t_box table.innerTable td.tdinput input {
+	margin-left: 7px;
+	width: 110px;
+	padding: 0 5px;
+}
+
+#main .t_box table.innerTable td.wid24 {
+	width: 32px;
+}
+
+#main .t_box table .ul04 li .w365,
+#main .t_box table .ul05 li .w365 {
+	width: 355px;
+	margin-bottom: 5px;
+	padding: 1px 5px;
+}
+
+#main .t_box table .ul05 li .w100 {
+	width: 100px;
+	padding: 1px 5px;	
+}
+
+#main .t_box table td .ul04 li {
+	margin-right: 12px;
+	float: left;
+}
+
+	* html #main .t_box table td .ul04 li {
+		margin-right: 6px;
+	}
+	
+	*+ html #main .t_box table td .ul04 li {
+		margin-right: 6px;
+	}
+
+#main .t_box table td .p03 span {
+	margin: 0 0 0 14px;
+}
+
+#main .t_box table .td09 {
+	padding: 2px 0;
+}
+
+#main .t_box table .td09 .bord {
+	padding: 12px 0 20px 15px;
+	border: 3px solid #BF726A;
+}
+
+#main .t_box table .td09 .bord p {
+	margin-bottom: 10px;
+	padding-left: 25px;
+	color: #C80000;
+	background: url(../img/reserve/estimate_icon02.gif) no-repeat left top;
+}
+
+#main .t_box table .td09 .bord .input01 {
+	margin: 0 12px;
+}
+
+#main .t_box table .td09 .bord span {
+	margin-bottom: 5px;
+	display: block;
+}
+
+#main .t_box table .td09 .bord select {
+	width: 105px;
+	margin-left: 12px;
+}
+
+#main .t_box table .td09 .bord .w365 {
+	margin-left: 39px;
+	width: 365px;
+}
+
+#main .t_box table .td09 .bord  .ml70 {
+	margin-left: 70px;
+}
+
+#main .t_box table td .ul05 li {
+	margin-right: 23px;
+	float: left;
+	font-size: 10px;
+	line-height: 1.5;
+}
+
+#main .t_box table td .ul05 li span {
+	display: block;
+	margin-left: 25px;
+}
+
+/*------------------------------------------------------------
+	トップページ
+------------------------------------------------------------*/
+#main .t_box table ul {
+	clear: both;	
+}
+
+#main .t_box table ul li {
+	margin-right: 15px;
+	float: left;
+}
+
+#main .t_box table ul li.last {
+	margin-right: 10px;
+	float: left;
+}
+
+#main .t_box .table03 span.txt02 {
+	margin: 0 5px 0;
+	float: left;
+}
+
+	* html #main .t_box .table03 span.txt02 {
+		margin: 2px 5px 0;
+	}
+	
+	*+ html #main .t_box .table03 span.txt02 {
+		margin: 2px 5px 0;
+	}
+
+#main .t_box table ul li input {
+	vertical-align: middle;
+}
+
+#main .t_box table p.txt {
+	margin-left: 8px;
+}
+
+#main .t_box table ul li .w120 {
+	margin-left: 5px;
+	width: 110px;	
+	padding: 0 5px;
+}
+
+#main table td .fwBold,
+#main .fwBold {
+	font-weight: bold;
+}
+
+#main .t_box table select {
+	margin: 0 5px;	
+}
+
+#main .t_box table textarea {
+	width: 90%;
+	height: 130px;	
+}
+
+#main .t_box table .red {
+	color: #C83333;	
+}
+
+#main .t_box table td.bb0 {
+	border-bottom: 0;
+}
+
+#main .submit {
+	margin-bottom: 40px;
+	text-align: center;	
+}
+
+/*---news---*/
+
+/*#main p.p02 {
+	margin: 0 0 14px 155px;
+}*/
+
+#main p span.color01 {
+	color: #CF001C;
+	display: block;
+}
+
+#main .ulBox {
+	margin-bottom: 15px;
+	padding: 10px 15px;
+	background-color: #F0F0F0;
+}
+
+#main .ulBox img {
+	display: block;
+}
+
+#main .ulBox ul {
+	padding: 0 0 5px 13px;
+	line-height: 1.2;
+	background: url(../img/room/news_back01.gif) no-repeat left bottom;
+}
+
+#main .ulBox ul li {
+	float: left;
+	letter-spacing: 1px;
+}
+
+#main .ulBox ul li img {
+	margin-bottom: 2px;
+}
+
+#main .ulBox ul li.li01 {
+	width: 352px;
+}
+
+#main .ulBox ul li.li02 {
+	margin-right: 25px;
+	width: 292px;
+	background: url(../img/room/news_icon01.gif) no-repeat right bottom;
+}
+
+#main .ulBox ul li span.font01 {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#main .ulBox ul li span.font02 {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#main .price_tableC,
+#main .price_tableB {
+	width: 800px!important;
+}
+
+#main .price_tableC td.winput {
+	width: 32px;
+}
+
+#main .price_tableC td.middle {
+	vertical-align: middle;
+	border: none;
+}
+
+#main .price_tableB th {
+	font-weight: bold;
+}
+
+#main .price_tableB .nwid01 {
+	padding-left: 45px;
+	width: 67%;
+}
+
+#main table.price_tableB th.wid02 {
+	width: 11%;
+}
+
+#main .price_tableC td a {
+	text-decoration: underline;
+}
+
+#main .price_tableC td a.text {
+	margin-right: 5px;
+}
+
+#main table.price_tableC td.wid01 {
+	width: 32px;
+}
+
+#main table.price_tableC td.inputW {
+	text-align: center;
+	width: 32px;
+}
+
+#main table.price_tableC td.wid04 {
+	border: none;
+}
+
+#main table.price_tableC tr.thick td {
+	background: #EAEAEA url(../img/room/news_back04.gif) repeat-y right top;
+}
+
+#main table.price_tableC tr.light td {
+	background: #F2F2F2 url(../img/room/news_back03.jpg) repeat-y right top;
+}
+
+#main table.price_tableC tr td.wid03 {
+	background-color: #E7E7E3;
+	background-image: none;
+	width: 18px;
+	text-align: center;
+}
+
+#main table.price_tableC tr td.wid02 {
+	padding-left: 12px;
+	width: 465px;
+}
+
+#main table.price_tableC tr td.wid04 {
+	font-family: Arial;
+}
+
+/*news2*/
+#main .Com_table01 ul.ul02 li.first {
+	width: 80px;
+}
+
+#main .Com_table01 ul.ul02 li {
+	width: 120px;
+	float: left;
+}
+
+#main .font14 {
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+
+#main .font14 th {
+	width: 32%;
+}
+
+#main table.thwd th  {
+	width: 28%;
+}
+
+#main p.p03 {
+	margin: 0 0 5px 15px;
+	font-size: 13px;
+}
+
+#main .font14 tr td a.a01 {
+	color: #333;
+}
+
+#main .font14 tr td a.a01:hover {
+	text-decoration: underline;
+}
+
+#main .table01 tr td span.c_ml01 {
+	margin-left: 28px;
+}
+
+#main .table01 tr td span.c_ml02 {
+	margin-left: 14px;
+}
+
+#main .table03 tr td dl.dl03 dt {
+	float: left;
+}
+
+#main .table03 tr td dl.dl03 dd {
+	padding-left: 15px;
+	_text-indent: -3px;
+}
+
+#main .pBox {
+	margin: 0 0 40px 110px;
+	width: 565px;
+	font-size: 12px;
+}
+
+#main .policy {
+	overflow-y: auto;
+	height: 200px;
+	border: 1px solid #99c;
+	padding: 0 10px 0 5px;
+	font-size: 13px;
+	width: 565px;
+}
+
+#main .policy p {
+	margin-bottom: 10px;
+}
+
+#main .pBox p.gray {
+	color: #666;
+}
+
+#main ul.c_btn {
+	margin: 0 auto;
+	width: 620px;
+}
+
+#main ul.c_btn li {
+	float: left;
+}
+
+#main ul.c_btn li img {
+	display: block;
+}
+
+#main ul.c_btn li.mr10 {
+	margin-right: 10px;
+}
+
+#main .pBox p.gray {
+	color: #666;
+}
+
+#main .pBox textarea {
+	height: 195px;
+	margin-bottom: 5px;
+	width: 565px;
+}
+
+#main ul.c_btn {
+	margin: 0 auto;
+	width: 620px;
+}
+
+#main ul.c_btn li {
+	float: left;
+}
+
+#main ul.c_btn li img {
+	display: block;
+}
+
+#main ul.c_btn li.mr10 {
+	margin-right: 10px;
+}
+
+.pb30 {
+	padding-bottom: 30px;
+}
+
+/*--cancel.html--*/
+#main .outBox01 {
+	margin: 0 auto;
+	width: 700px;
+}
+
+#main .outBox01 p.p03 {
+	margin: 0 0 6px 15px;
+}
+
+#main .outBox01 .table01 th {
+	width: 33%;
+}
+
+#main .outBox01 p.special01 {
+	margin-bottom: 10px;
+	text-align: center;
+	font-size: 16px;
+}
+
+#main .outBox01 p.special02 {
+	padding: 10px 0;
+	margin: 0 auto 30px;
+	width: 328px;
+	font-size: 18px;
+	text-align: center;
+	border: 1px solid #9C9C9C;
+}
+
+#main .outBox01 span.bold {
+	font-weight: bold;
+}
+	
+#main .outBox01 p.special02 span {
+	margin-left: 15px;
+	color: #CF001C;
+	font-size: 28px;
+}
+
+#main .outBox01 p.special03 {
+	margin-bottom: 15px;
+	text-align: center;
+	font-size: 12px;
+}
+
+#main .outBox01 h3 {
+	margin-bottom: 3px;
+}
+
+#main .outBox01 .c_btn {
+	margin: 0 0 0 115px;
+	width: auto;
+}
+
+a.new_btn01 {
+	width: 151px;
+	background: url(../img/room/news_btn01_over.jpg) no-repeat left top;
+	display: block;
+}
+
+a.new_btn01:hover {
+	background-color: #fff;
+}
+
+a.new_btn01:hover img {
+	visibility: hidden;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+	
+	#main .t_box table ul li input {
+		vertical-align: 0;
+	}
+	
+	#main .price_tableB .nwid01 {
+		width: 493px;
+	}
+	
+	#main table.price_tableB th.wid02 {
+		width: 80px;
+	}
+
+}
+
+#main .table01 {
+	margin-bottom: 30px;
+	width: 100%;
+	font-size: 14px;
+}
+
+#main .table01 th {
+	padding: 7px 20px;
+	text-align: left;
+	vertical-align: middle;
+	font-weight: normal;
+	border-bottom: 3px solid #fff;
+	border-right: 4px solid #fff;
+	background-color: #DCDCDC;
+}
+
+#main .table01 td {
+	padding: 7px 17px;
+	text-align: left;
+	border-bottom: 3px solid #fff;
+	background-color: #F0F0F0;
+}
+
+#main .none {
+	border-bottom: none;
+}
+
+#main .table02 {
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+#main .table02 th {
+	font-weight: normal;
+	text-align: center;
+}
+
+#main .table02 td {
+	padding: 5px 15px;
+	border-bottom: 1px solid #fff;
+	border-right: 2px solid #fff;
+	background-color: #F0F0F0;
+}
+
+#main .table02 td span.size14 {
+	font-size: 14px;
+}
+
+#main .table02 td span.size10 {
+	font-size: 10px;
+}
+
+#main .table02 .td01 {
+	padding-top: 15px;
+	width: 100px;
+	vertical-align: top;
+	text-align: center;
+	border-bottom: 3px solid #fff;
+	border-right: 4px solid #fff;
+	background-color: #DCDCDC;
+	font-weight: bold;
+}
+
+#main .table02 .td02 {
+	padding: 0 15px; 
+	text-align: left;
+	vertical-align: middle;
+	background-color: #E6E6E6;
+	border-bottom: 3px solid #fff;
+	border-right: 3px solid #fff;
+	font-weight: bold;
+}
+
+#main .table02 .td03 {
+	width: 300px;
+}
+
+#main .table02 .td04 {
+	text-align: center;
+}
+
+#main .table02 .td05 {
+	text-align: center;
+	font-size: 14px;
+	color: #D40000;
+	font-family: Arial;
+}
+
+#main .table02 .td06 {
+	border-bottom: 3px solid #fff;
+}
+
+#main .table02 .td07 {
+	background-color: #E6E6E6;
+}
+
+#main .table02 .td08 {
+	padding: 10px 15px;
+	font-size: 14px;
+	text-align: right;
+	background: #DCDCDC;	
+	border-bottom: 3px solid #fff;
+	font-weight: bold;
+}
+
+#main .table02 .td08 span {
+	margin-left: 30px;
+	font-size: 16px;
+	color: #D40000;
+}
+
+#main table.table02  td.td08 span.size20 {
+	display: inline-block;
+	font-size: 20px;
+}
+
+#main .table02 .td09 {
+	padding-right: 15px;
+	text-align: right;
+}
+
+#main .ul01 li.li01 a {
+	background: url(../img/reserve/estimate_button01_over.gif) no-repeat;
+	display: block;
+}
+
+#main .ul01 li.li02 a {
+	background: url(../img/reserve/estimate_button02_over.gif) no-repeat;
+	display: block;
+}
+
+#main .ul01 li a:hover {
+	background-color:#FFF;
+}
+
+#main .ul01 li a:hover img {
+	visibility: hidden;
+}
+
+#main .t_box table th span.backno {
+	background: none;
+}
+
+#main .t_box table .ul02 {
+	margin: 0 0 5px 0px;
+}
+
+#main .t_box table .ul02 li.first {
+
+	float: left;
+	width: 30px;
+	line-height: 2;
+}
+
+#main .t_box table .ul02 li.first span {
+	padding-left: 10px;
+}
+
+#main .t_box table .ul02 li.second {
+	float: left;
+	width: 30px;
+}
+
+#main .t_box table .ul02 li {
+	float: left;
+	width: 130px;
+	margin-right: 0;
+}
+
+#main .t_box table .ul02 li input {
+	float: left;
+	width: 120px;
+	vertical-align: middle;
+}
+
+#main .t_box table td dl.dl03 dt {
+	float: left;
+}
+
+#main .t_box table td dl.dl03 dd {
+	padding-left: 14px;
+}
+
+ * html	#main .t_box table td dl.dl03 dd {
+		text-indent: -3px;
+	}
+
+#main .t_box table .td09 .bord .input01 {
+	margin: 0 12px;
+	width: 60px;
+	text-align: left;
+	padding: 0 5px;
+}
+
+	* html #main .t_box table .td09 .bord .input01 {
+		width: 55px;
+	}
+	
+	*+ html #main .t_box table .td09 .bord .input01 {
+		width: 55px;
+	}
+
+#main .t_box table .td09 .bord select {
+	width: 105px;
+	margin-left: 12px;
+}
+
+#main .t_box table .td09 .bord .w365 {
+	margin-left: 36px;
+	width: 365px;
+}
+
+#main .t_box table .td09 .bord  .ml70 {
+	margin-left: 70px;
+}
+
+#main .t_box table td .ul05 li {
+	margin-right: 23px;
+	float: left;
+}
+
+#main .t_box table td .ul05 li.li01 {
+	font-size: 10px;
+}
+
+#main .t_box .table03 td ul li label span.mid03 {
+	vertical-align: -3px; /*-2*/
+	margin-left: 5px;
+}
+
+	* html #main .t_box .table03 td ul li label span.mid03 {
+		vertical-align: -2px;
+	}
+
+	*+ html #main .t_box .table03 td ul li label span.mid03 {
+		vertical-align: -1px;
+	}
+
+#main .t_box .table03 th {
+	font-weight: bold;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	#main .t_box .table03 td ul li label {
+	vertical-align: 2px;
+}
+}
+
+div.dialogButtons {
+    margin-top:1em;
+    text-align:right;
+}
+
+/*オプションエラー*/
+div.optionError {
+    font-size:   14px;
+    color:       #C80000;
+}
+
+div.optionError span.optName {
+    font-weight: bold;
+}
+
+div.warningConfirmDialog ul.err {
+    margin:0 0 0.5em 5px;
+}
+
+
+div.personerr {
+    font-size:   14px;
+    color:       #C80000;
+    font-weight: bold;
+    background-color:#fff;
+}
+
+div.personerr ul {
+    padding:5px 0 5px 5px;
+}
+
+div.personerr ul li {
+    line-height:1.2em;
+}
+
+div.personerr ul li:not(:first-child) {
+    margin-top:5px;
+}

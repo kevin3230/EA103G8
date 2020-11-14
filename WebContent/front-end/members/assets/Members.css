@@ -1,0 +1,66 @@
+        body {
+            background-color: #f2f2f2;
+            color: #444;
+        }
+        h3 {
+            text-align: center;
+            height: auto;
+        }
+        .formargin {
+            margin: 3px auto 3px auto;
+        }
+        .container form, .container table {
+            text-align: center;
+        }
+        form .btn {
+            margin: 0 auto;
+        }
+        .table {
+            background-color: #f2f2f2;
+        }
+        /* .table th, .table tr, .table td {
+            border: 1px solid #a6a6a6;
+        } */
+        .table th {
+            width: 30%;
+        }
+        label .gender {
+            margin: 0 15px 0 15px;
+        }
+        label input {
+            margin: 0 15px;
+        }
+        .sub_btn {
+            display: inline;
+        }
+        .sub_btn input {
+            margin: 0 20px;
+        }
+        input[type="text"],
+        input[type="password"],
+        input[type="date"] {
+            border-radius: 4px;
+            border: 1px solid #c8cccf;
+            color: #6a6f77;
+            width: 100%;
+        }
+        #logout {
+            right: 3px;
+            top: 3px;
+        }
+        #memMagicalbtn {
+            position: fixed;
+            bottom: 10px;
+            left: 40px;
+        }
+        #vdMagicalbtn {
+            position: fixed;
+            bottom: 10px;
+            right: 40px;
+        }
+        div .fas {
+            text-align: left;
+        }
+        .btnwidth {
+            width: 200px;
+        }

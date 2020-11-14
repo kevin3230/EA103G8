@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Header</title>
+	<link rel="stylesheet" href="../../utility/fontawesome-5.15.1/css/all.min.css">
+	<link rel="stylesheet" href="../../utility/css/bootstrap.min.css">
+	<style>
+		/* 思源黑體 */
+		@font-face {
+			font-family: Noto Sans TC;
+			src: url(./assets/font/Noto_Sans_TC/NotoSansTC-Regular.otf);
+		}
+		/* 思源宋體 */ 
+		@font-face {
+			font-family: Noto Serif TC;
+			src: url(./assets/font/Noto_Serif_TC/NotoSerifTC-Regular.otf);
+		}
+
+		body {
+			font-family: Noto Sans TC, Microsoft JhengHei;
+			/*font-family: Noto Serif TC, Microsoft JhengHei;*/
+		}
+
+		#top {
+			width: 100%;
+			height: 137px;
+		}
+
+		#logo {
+			height: 65px;
+		}
+
+		div.headerIcons {
+			height: 100%;
+			font-size: 140%;
+		}
+
+		.text-def {
+			color: rgb(200, 200, 200) !important;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="top">
+		<div class="fixed-top">		<!-- fixed-top: 固定在上方 -->
+			<header class="d-flex justify-content-between px-3 py-2">
+				<!-- logo -->
+				<a href="#"><img id="logo" src="images/logo.png" alt="PLAMPING"></a>
+
+				<div>
+					<!-- 搜尋列 -->
+<!-- 					<form class="form-inline pl-2">
+						<input class="form-control mr-sm-2" type="search" placeholder="搜尋露營區" aria-label="Search">
+					</form> -->
+
+					<!-- icon -->
+					<div class="d-flex flex-row-reverse align-items-center headerIcons">
+						<a class="text-dark px-3" href="#"><i class="fas fa-user-circle fa-1x"></i> </a>
+						<a class="text-dark px-3" href="#"><i class="fas fa-envelope fa-1x"></i></a>
+						<a class="text-dark px-3" href="#"><i class="fas fa-shopping-cart fa-1x"></i></a>
+						<a class="text-dark px-3" href="#"><i class="fas fa-heart fa-1x"></i></a>
+					</div>
+				</div>
+			</header>
+
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark d-flex justify-content-end">
+				<!-- hamburger -->
+				<button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<!-- 導覽列上的選項 -->
+				<div class="collapse navbar-collapse" id="navbarNav">		<!-- navbarNav: 為了hamburger -->
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item px-2">		<!-- .action: 標示目前位置 -->
+							<a class="nav-link text-def" href="#">預約營位<!-- <span class="sr-only">(current)</span> --></a>
+						</li>
+						<li class="nav-item px-2">
+							<a class="nav-link text-def" href="#">瀑布牆</a>
+						</li>
+						<li class="nav-item px-2">
+							<a class="nav-link text-def" href="#">活動快報</a>
+						</li>
+						<li class="nav-item px-2">
+							<a class="nav-link text-def" href="#">露營指南</a>
+						</li>
+						<li class="nav-item px-2">
+							<a class="nav-link text-def" href="#">裝備介紹</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</div>
+
+	<script src="../../utility/js/jquery-3.5.1.slime.min.js"></script>
+	<script src="../../utility/js/popper.min.js"></script>
+	<script src="../../utility/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+        #frame {
+            width: 100%;
+            height: 100%;
+            border: 2px solid rgb(166, 166, 166);
+            box-sizing: border-box;
+            user-select: none;
+            background: url("../img/Night_Camp_Vector.svg");
+            background-size: cover;
+            background-position: center;
+        }
+        #frame div {
+            padding: 0;
+        }
+        #frame>div:first-child {
+            background-color: rgba(240, 240, 240, 0.95);
+            margin: 0 -15px;
+            padding-top: 20px;
+        }
+        #frame h2 {
+            margin-bottom: 0.5rem;
+        }
+        #frame label {
+            font-size: 24px;
+            font-weight: 500;
+            padding: 1px 5px;
+            display: inline-block;
+            margin-bottom: 0.5rem;
+        }
+        #frame input {
+            width: 20px;
+            height: 20px;
+        }
+        #frame input[type="checkbox"], #frame input[type="radio"] {
+            appearance: auto;
+            opacity: 1;
+            margin: 0;
+            float: none;
+            display: inline-block;
+        }
+        #frame hr {
+            margin: 1rem 0;
+        }
+
+        #goToSearch {
+            font-size: inherit;
+            font-weight: bold;
+            color: #FFF !important;
+            margin-bottom: 10px;
+        }

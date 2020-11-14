@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>EA103G8</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <resource-ref>
+    <description>DB Connection</description>
+    <res-ref-name>jdbc/PlampingDB</res-ref-name>
+    <res-type>javax.sql.DataSource</res-type>
+    <res-auth>Container</res-auth>
+  </resource-ref> 
+
+  <servlet>
+    <servlet-name>EqptIntroServlet</servlet-name>
+    <servlet-class>com.eqptintro.controller.EqptIntroServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EqptIntroServlet</servlet-name>
+    <url-pattern>/EqptIntro/eqptintro.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>WaterfallServlet</servlet-name>
+    <servlet-class>com.waterfall.controller.WaterfallServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>WaterfallServlet</servlet-name>
+    <url-pattern>/waterfall/waterfall.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>WFReplyServlet</servlet-name>
+    <servlet-class>com.waterfall.controller.WFReplyServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>WFReplyServlet</servlet-name>
+    <url-pattern>/waterfall/wfreply.do</url-pattern>
+  </servlet-mapping>
+  
+	<filter>
+		<filter-name>LoginHandler</filter-name>
+		<filter-class>filters.LoginFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>LoginHandler</filter-name>
+		<url-pattern>/back-end/adminis/*</url-pattern>
+		<url-pattern>/back-end/wfreport/*</url-pattern>
+		<dispatcher>REQUEST</dispatcher>
+		<dispatcher>FORWARD</dispatcher>
+		<dispatcher>INCLUDE</dispatcher>
+		<dispatcher>ERROR</dispatcher>
+		<dispatcher>ASYNC</dispatcher>
+	</filter-mapping>
+			
+	<filter>
+		<filter-name>MemLoginFilter</filter-name>
+		<filter-class>filters.MemLoginFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>MemLoginFilter</filter-name>
+		<url-pattern>/carcamp/carCamp.do</url-pattern>
+		<url-pattern>/front-end/careqpt/carEqpt.jsp</url-pattern>
+		<url-pattern>/front-end/carfood/reserveFood.jsp</url-pattern>
+		<url-pattern>/front-end/carorder/confirmOrder.jsp</url-pattern>
+		<url-pattern>/front-end/carorder/checkoutComplete.jsp</url-pattern>
+		<url-pattern>/front-end/members/MembersInfo.jsp</url-pattern>
+		<url-pattern>/front-end/membersorder/membersOrder.jsp</url-pattern>
+		<url-pattern>/front-end/message/chatroom.jsp</url-pattern>
+		<url-pattern>/front-end/waterfall/addWaterfall.jsp</url-pattern>
+		<dispatcher>REQUEST</dispatcher>
+		<dispatcher>FORWARD</dispatcher>
+		<dispatcher>INCLUDE</dispatcher>
+		<dispatcher>ERROR</dispatcher>
+		<dispatcher>ASYNC</dispatcher>
+	</filter-mapping>
+	
+	<filter>
+		<filter-name>VdLoginFilter</filter-name>
+		<filter-class>filters.VdLoginFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>VdLoginFilter</filter-name>
+		<url-pattern>/front-end/camp/*</url-pattern>
+		<url-pattern>/front-end/equipment/*</url-pattern>
+		<url-pattern>/front-end/food/*</url-pattern>
+		<url-pattern>/front-end/promotion/*</url-pattern>
+		<url-pattern>/front-end/vendorfoodstatic/*</url-pattern>
+		<url-pattern>/front-end/membersorder/vendorsOrder.jsp</url-pattern>
+		<dispatcher>REQUEST</dispatcher>
+		<dispatcher>FORWARD</dispatcher>
+		<dispatcher>INCLUDE</dispatcher>
+		<dispatcher>ERROR</dispatcher>
+		<dispatcher>ASYNC</dispatcher>
+	</filter-mapping>
+
+</web-app>

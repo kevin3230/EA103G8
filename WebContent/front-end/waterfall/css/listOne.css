@@ -1,0 +1,78 @@
+body{
+	margin: 0px auto;
+	background-color:white;
+}
+table {
+	width: 800px;
+	background-color: white;
+	margin: 5px auto;
+}
+#divOut{
+  text-align: center;
+  margin:10px;
+}
+#divIn{
+  text-align: left;
+}
+#all{
+width:70%;
+text-align: left;
+margin: 10px auto;
+}
+.share-border{
+	border-top: 1px solid #a9a9a9;
+	margin: 10px;
+}
+.carousel .carousel-item {
+  height: 400px;
+  
+}
+.carousel-item img {
+	display:flex;
+    width:auto;
+    height:auto;
+    position: absolute;
+    object-fit:cover;
+    top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    max-width:100%;
+	max-height:100%;
+}
+#onePic{
+	height:400px;
+	width:700px;
+	margin: 0 auto;
+}
+#onePic img{
+	display:flex;
+	align-items:center;
+	margin: 0 auto;
+	max-width:100%;
+	max-height:100%;
+}
+.carousel-control-prev-icon {
+	background-image:url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23009be1' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E"); 
+}
+.carousel-control-next-icon { 
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23009be1' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+#wfcontent{
+	font-size:18px; 
+	background-color:#eff5f5;
+	width:80%; 
+	margin:20 auto;
+	text-align: justify;
+    text-align-last: left;
+}
+#drop{
+	background-color: transparent;
+	 position: absolute;
+	 top:5px;
+	 right:15px;
+	 z-index: 1;
+}
+#drop:hover{
+	background-color:white;
+}
+
